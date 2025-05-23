@@ -82,7 +82,7 @@ img {
 }
 
 .bg-flor{
-    background-image: url(images/bg-flor.png);
+    background-image: url("/images/bg-flor.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5rem;
