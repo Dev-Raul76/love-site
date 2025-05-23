@@ -1,0 +1,163 @@
+/* VER STATS-PREVIEW-CARD-COMPONENT-MAIN */
+
+:root{
+    --color-primary: rgb(65, 75, 51);
+    --color-secundary: rgb(250, 248, 241);
+    --color-primary-transparent: rgba(65, 75, 51, 0.24);
+    --bg-color-primary: rgb(113, 124, 98);
+    --color-text: rgb(243, 238, 222);
+    --font-light: "Montserrat", sans-serif;
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-secundary);
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.col-span-12{
+    grid-column: span 12;
+}
+
+.col-span-6{
+    grid-column: span 6;
+}
+
+.header{
+    background-color: rgba(65, 75, 51, 0.24);
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    background-color: var(--bg-color-primary);
+    gap: 2rem;
+}
+
+.logo-header {
+    padding: 0;
+    width: 10rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+.container-post{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.container-post-image{
+    padding: 1.5rem;
+}
+
+#image-1,
+#image-2{
+    border-radius:10px;
+}
+
+.flor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-flor{
+    background-image: url(/images/bg-flor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+.flor-text{
+   width: 30rem;
+   height: 15rem;
+   background-color: rgba(65, 75, 51, 0.7);
+}
+
+.margin-bottom{
+    margin-bottom: 2rem;
+    
+}
+
+.image-frame{
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+    border: 1px solid #4c2b08;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+h2{
+    color: #4c2b08;
+    font-weight: 400;
+    font-family: var(--font-light);
+}
+
+
+
+
+@media screen and (min-width: 37.5rem){
+    .col-2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-span-1{
+        grid-column: span 1;
+    }
+    .col-span-2{
+        grid-column: span 2;
+    }
+
+    .order-1{
+   padding: 2rem 0 2rem 0;
+    }
+
+    .order-2{
+    order: 2;
+    }
+
+    #image-1{
+    border-radius: 0 50px 50px 0;
+    }
+
+    #image-2{
+    border-radius: 50px 0 0 50px;
+    }
+
+    .container-post-text,
+    .container-post-image{
+    padding: 0;
+    }
+
+    .image-frame{
+    width: 18rem;
+    height: 30rem;
+    }
+}
+
+
