@@ -101,7 +101,7 @@ img {
 
 .image-frame{
     height: 15rem;
-    width: 15rem;
+    width: 10rem;
     margin: 0 auto;
     border: 1px solid #4c2b08;
     padding: 1rem;
@@ -154,7 +154,20 @@ h2{
     padding: 0;
     }
 
+}
+
+
+@media screen and (min-width: 50rem){
+    
     .image-frame{
+    width: 15rem;
+    height: 20rem;
+    }
+
+}
+
+@media screen and (min-width: 67.5rem){
+ .image-frame{
     width: 18rem;
     height: 30rem;
     }
